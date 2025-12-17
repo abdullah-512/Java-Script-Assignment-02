@@ -1,0 +1,55 @@
+body{
+    background-repeat: no-repeat;
+    background-image: url(./pictures/DDD1.webp);
+    background-size: cover;
+    color: #fff;
+}
+
+.hi{
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    color: blue;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+.box{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: 50px;
+    color: mediumblue;
+    align-content: center;
+}
+
+a:hover{
+    color: red;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+.href{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    display: block;
+    margin-top: 30px;
+    margin-left: 170px; 
+}
+
+.href1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    display: block;
+    margin-top: 30px; 
+}

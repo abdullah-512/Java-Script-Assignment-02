@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8-9</title>
+    <link rel="stylesheet" href="./../style.css">
+    <link rel="icon" type="image/x-icon" href="./pictures/Abdullah gaming 01.jpg">
+</head>
+<body>
+    <h1 class="hi">Chapter 8-9</h1>
+    <a href="./../index.html" class="href1">Go back</a>
+</body>
+
+
+    <script>
+
+            document.write("<h1> Question 3 </h1> <br>")
+
+        var userName = prompt("Enter your name:");
+alert("Hello " + userName + "! Welcome!");
+
+var sub1 = prompt("Enter first subject name:");
+var sub2 = prompt("Enter second subject name:");
+var sub3 = prompt("Enter third subject name:");
+
+var totalMarksPerSubject = 100;
+
+var obt1 = +prompt("Enter obtained marks for " + sub1 + ":");
+var obt2 = +prompt("Enter obtained marks for " + sub2 + ":");
+var obt3 = +prompt("Enter obtained marks for " + sub3 + ":");
+
+var totalObtained = obt1 + obt2 + obt3;
+var totalMarks = totalMarksPerSubject * 3;
+var percentage = (totalObtained / totalMarks) * 100;
+
+document.write(`
+    <table border="10" cellpadding="10">
+        <tr>
+            <th>Subject</th>
+            <th>Total Marks</th>
+            <th>Obtained Marks</th>
+        </tr>
+        <tr>
+            <td>${sub1}</td>
+            <td>${totalMarksPerSubject}</td>
+            <td>${obt1}</td>
+        </tr>
+        <tr>
+            <td>${sub2}</td>
+            <td>${totalMarksPerSubject}</td>
+            <td>${obt2}</td>
+        </tr>
+        <tr>
+            <td>${sub3}</td>
+            <td>${totalMarksPerSubject}</td>
+            <td>${obt3}</td>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <th>${totalMarks}</th>
+            <th>${totalObtained}</th>
+        </tr>
+        <tr>
+            <th colspan="3">Percentage: ${percentage.toFixed(2)}%</th>
+        </tr>
+    </table>
+`);
+
+    </script>
+</html>
